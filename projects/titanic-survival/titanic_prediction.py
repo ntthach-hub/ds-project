@@ -82,7 +82,7 @@ def preprocess_data(df):
     df_processed = df.copy()
     
     # Handle missing age values
-    df_processed['Age'].fillna(df_processed['Age'].median(), inplace=True)
+    df_processed['Age'] = df_processed['Age'].fillna(df_processed['Age'].median())
     
     # Feature engineering: Family size
     df_processed['FamilySize'] = df_processed['SibSp'] + df_processed['Parch'] + 1
