@@ -241,24 +241,25 @@ def main():
     print("DATA VALIDATION EXAMPLE")
     print("=" * 60 + "\n")
     
-    # Create sample data with some quality issues
+    # Create sample data with some quality issues for demonstration
     np.random.seed(42)
     n = 100
     
+    # Note: Values intentionally include data quality issues for validation demo
     data = {
         'customer_id': list(range(1, n+1)),
-        'age': np.random.randint(15, 90, n).astype(float),  # Some ages < 18
-        'income': np.random.uniform(-1000, 100000, n),  # Some negative incomes
-        'category': np.random.choice(['A', 'B', 'C', 'Invalid'], n),  # Invalid category
-        'score': np.random.uniform(0, 150, n),  # Some scores > 100
+        'age': np.random.randint(15, 90, n).astype(float),  # Range: 15-90 (some < 18 to trigger validation)
+        'income': np.random.uniform(-1000, 100000, n),  # Range: -1000 to 100k (negative values to trigger validation)
+        'category': np.random.choice(['A', 'B', 'C', 'Invalid'], n),  # Include 'Invalid' to trigger validation
+        'score': np.random.uniform(0, 150, n),  # Range: 0-150 (some > 100 to trigger validation)
     }
     
-    # Add some missing values
+    # Add some missing values (5% of data) at specific indices for demonstration
     for i in [5, 15, 25, 35, 45]:
         data['age'][i] = np.nan
         data['income'][i] = np.nan
     
-    # Add some duplicates
+    # Add a duplicate record for demonstration
     data['customer_id'][95] = data['customer_id'][1]
     
     df = pd.DataFrame(data)
