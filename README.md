@@ -3,6 +3,8 @@
 This repository contains my small machine learning projects and Kaggle practice notebooks while learning Data Science.
 
 > **New! 🆕** Learn about [Data Engineering vs Data Science roles](docs/DE_vs_DS_Guide.md) - understand what each role does daily, skills needed, and how they work together!
+> 
+> **Tiếng Việt! 🇻🇳** [Hướng dẫn Data Engineering vs Data Science bằng tiếng Việt](docs/DE_vs_DS_Guide_VI.md) - tìm hiểu công việc hàng ngày, kỹ năng cần thiết, và cách họ làm việc cùng nhau!
 
 ## 📁 Repository Structure
 
@@ -135,11 +137,17 @@ Throughout this repository, I'm practicing and implementing concepts from:
   - What skills are needed for each role?
   - Career paths and learning resources
 
+**📚 Tài liệu Tiếng Việt (Vietnamese Documentation):**
+- [Hướng dẫn DE vs DS](docs/DE_vs_DS_Guide_VI.md) - Giải thích chi tiết vai trò và kỹ năng
+- [ETL Examples README](etl/README_VI.md) - Giải thích các ví dụ ETL bằng tiếng Việt
+
 ## 📝 Notes
 
 This is a learning repository, so code and approaches may not always be optimal. The focus is on learning and experimenting with different data science and data engineering techniques.
 
 The repository demonstrates both Data Engineering (preparing and cleaning data) and Data Science (analyzing data and building models) workflows.
+
+**Ghi chú (Vietnamese Note):** Repository này minh họa cả công việc Data Engineering (chuẩn bị và làm sạch dữ liệu) và Data Science (phân tích dữ liệu và xây dựng mô hình).
 
 ## 📄 License
 
