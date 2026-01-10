@@ -2,19 +2,27 @@
 
 This repository contains my small machine learning projects and Kaggle practice notebooks while learning Data Science.
 
+> **New! 🆕** Learn about [Data Engineering vs Data Science roles](docs/DE_vs_DS_Guide.md) - understand what each role does daily, skills needed, and how they work together!
+
 ## 📁 Repository Structure
 
 ```
 ds-project/
-├── projects/                  # Machine learning project implementations
+├── projects/                  # Machine learning project implementations (DS work)
 │   ├── iris-classification/   # Iris dataset classification project
 │   └── titanic-survival/      # Titanic survival prediction project
-├── kaggle-notebooks/          # Kaggle competition practice notebooks
+├── kaggle-notebooks/          # Kaggle competition practice notebooks (DS work)
 │   ├── titanic/              # Titanic: Machine Learning from Disaster
 │   └── house-prices/         # House Prices: Advanced Regression Techniques
+├── etl/                      # ETL pipelines and data engineering examples (DE work)
+│   ├── simple_etl.py         # Basic ETL pipeline example
+│   ├── data_validation.py    # Data quality validation
+│   └── api_data_collector.py # API data collection example
 ├── data/                     # Datasets used in projects
 │   ├── raw/                  # Raw, immutable datasets
 │   └── processed/            # Cleaned and processed datasets
+├── docs/                     # Documentation
+│   └── DE_vs_DS_Guide.md    # Data Engineering vs Data Science guide
 └── requirements.txt          # Python dependencies
 ```
 
@@ -44,7 +52,31 @@ Navigate to any project or notebook directory and follow the specific instructio
 
 ## 📊 Projects
 
-### Machine Learning Projects
+### Data Engineering Examples (ETL/Pipelines)
+
+Learn the fundamentals of Data Engineering - the work that happens BEFORE data science:
+
+1. **Simple ETL Pipeline** (`etl/simple_etl.py`)
+   - Extract, Transform, Load data
+   - Data cleaning and preprocessing
+   - Automated data processing
+   - Run: `python etl/simple_etl.py`
+
+2. **Data Validation** (`etl/data_validation.py`)
+   - Data quality checks
+   - Completeness and consistency validation
+   - Automated quality monitoring
+   - Run: `python etl/data_validation.py`
+
+3. **API Data Collector** (`etl/api_data_collector.py`)
+   - Collect data from external APIs
+   - Handle pagination and rate limiting
+   - Scheduled data collection
+   - Run: `python etl/api_data_collector.py`
+
+### Machine Learning Projects (Data Science)
+
+After data is cleaned by DE, Data Scientists work on these projects:
 
 1. **Iris Classification** (`projects/iris-classification/`)
    - Classic ML project using the Iris dataset
@@ -80,15 +112,34 @@ Navigate to any project or notebook directory and follow the specific instructio
 ## 📚 Learning Resources
 
 Throughout this repository, I'm practicing and implementing concepts from:
+
+**Data Engineering:**
+- ETL pipeline development
+- Data quality validation
+- API data collection
+- Database management
+- Data pipeline automation
+
+**Data Science:**
 - Machine Learning fundamentals
 - Data preprocessing and feature engineering
 - Model evaluation and validation
 - Exploratory Data Analysis (EDA)
 - Various ML algorithms (Classification, Regression, Clustering)
 
+**Understanding the Workflow:**
+- Read [Data Engineering vs Data Science Guide](docs/DE_vs_DS_Guide.md) to understand:
+  - What does a Data Engineer do daily?
+  - What does a Data Scientist do daily?
+  - How do DE and DS roles work together?
+  - What skills are needed for each role?
+  - Career paths and learning resources
+
 ## 📝 Notes
 
-This is a learning repository, so code and approaches may not always be optimal. The focus is on learning and experimenting with different data science techniques.
+This is a learning repository, so code and approaches may not always be optimal. The focus is on learning and experimenting with different data science and data engineering techniques.
+
+The repository demonstrates both Data Engineering (preparing and cleaning data) and Data Science (analyzing data and building models) workflows.
 
 ## 📄 License
 

@@ -125,3 +125,5 @@ Thumbs.db
 *.swp
 *.swo
 *~
+# Generated sample data from ETL examples
+data/processed/customer_transactions_clean*
